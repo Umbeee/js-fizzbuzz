@@ -1,0 +1,39 @@
+#box-container{
+    margin-bottom: 25px;
+}
+
+.box{
+    aspect-ratio: 1;
+    flex-basis: calc(100% / 10 - 5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+.box--fizz{
+    background-color: lightskyblue;
+}
+
+
+.box--buzz{
+    background-color: lightgreen;
+}
+
+.box--fizzbuzz{
+    background-color: lightcyan;
+}
+
+.box--num{
+    background-color: lightcoral;
+}
+
+@media only screen and  (max-width: 992px){
+    .box{
+        flex-basis: calc(100% / 5 - 5px);
+        aspect-ratio
+    }
+}
